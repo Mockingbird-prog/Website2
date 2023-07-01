@@ -1,0 +1,157 @@
+{
+    margin:0;
+    padding:0;
+}
+
+.sky { 
+    height: 175vh;
+    width:100%;
+   
+    position: absolute;
+    background-repeat: no-repeat;
+    top:-4vh;
+}
+
+#skies{
+    top:100vh;
+    height:260vh;
+    width:400vw;
+    background-repeat: no-repeat;
+    animation: skymove linear 1s infinite;
+}
+
+#treeimg{
+    top:1700vh;
+    height:150vh;
+    width:800vw;
+    background-repeat: no-repeat;
+    animation: bgmove linear 10s infinite;
+}
+
+
+.trees { 
+    height: 138vh;
+    width:100%;
+    position: absolute;
+
+background-size: cover;
+background-repeat: no-repeat;
+bottom: 100vh;
+}
+
+.track { 
+    height: 20vh;
+    width:800vw;
+    position: absolute;
+top:130vh;
+background-repeat: no-repeat;
+
+
+}
+
+#trackimg{
+    width:100%;
+    height:40vh;
+    animation: carMove linear 60s infinite;
+}
+
+.car{
+    height: 70vh;
+    top:-10vh;
+    width:100%;
+    position: absolute;
+background-image: url('car_body.png');
+background-repeat: no-repeat;
+
+animation: shake linear .6s infinite;
+}
+body{
+    overflow: hidden;
+    animation: bodyShake linear .90s infinite;
+}
+
+
+.wheel1{
+   
+   
+    left: 650px;;
+    bottom:60vh;
+    top:20vh;
+    width:50vh;
+    position:relative;
+       
+       
+}
+
+.wheel1 img{
+    animation: wheelRotation linear.6s infinite;
+}
+
+.wheel2 {
+    left:12vh;
+    bottom:600vh;
+    top:-6vh;
+    height:150vh;
+  width:100vh;
+    position:relative;
+    
+}
+
+.wheel2 img{
+    
+    animation: wheelRotation linear .6s infinite;
+}
+
+@keyframes wheelRotation{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes carMove{
+    100% {
+        transform: translatex(-500vw);
+    }
+}
+
+@keyframes shake
+{
+    0% {
+        transform: translatey(-5px);
+    }
+
+    50% {
+        transform: translatey(5px);
+    }
+
+100% {
+        transform: translatey(-5px);
+    }
+}
+
+@keyframes skymove{
+    100% {
+        transform: translatex(-300vw);
+    }
+}
+
+@keyframes bgmove{
+    100% {
+        transform: translatex(-300vw);
+    }
+}
+
+@keyframes bodyShake
+{
+    0% {
+        transform: translatey(-5px);
+    }
+
+    50% {
+        transform: translatey(5px);
+    }
+
+100% {
+        transform: translatey(-5px);
+    }
+}
